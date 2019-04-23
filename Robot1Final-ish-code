@@ -1,0 +1,17 @@
+#include <kipr/botball.h>
+
+int main()
+{
+    wait_for_light (2);
+    
+    motor(0, 100);
+    motor(1, 100);
+    msleep(4750);
+    if (analog(1) <= 2000){
+        motor(0, 0);
+        motor(1, 0);
+        motor(2, 75);
+        msleep(10000);
+    }
+    
+}
