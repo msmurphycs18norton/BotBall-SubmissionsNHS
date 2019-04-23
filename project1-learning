@@ -1,0 +1,24 @@
+int main()
+{
+    motor(0,-100);
+    motor(1,100);
+    msleep(2500);
+
+    ao();
+    
+    enable_servos();
+    set_servo_position(1,1000);
+    msleep(2000);
+    disable_servos();
+    
+    motor(0,-100);
+    motor(1,100);
+    msleep(500);
+    
+    ao();
+    
+    enable_servos();
+    set_servo_position(1,0);
+    msleep(2000);
+    disable_servos();
+}
