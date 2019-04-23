@@ -1,0 +1,47 @@
+int main()
+{
+    motor (0,100);
+    motor (1,100);
+    msleep (2500);
+    //moves to middle bulding
+    //reaches for first building and brings it to
+    motor (1,-100);
+    motor (0,-100);
+    msleep (2500);
+    //moves back to box
+    
+    motor (0,-100);
+    motor(1,100);
+    msleep (400);
+    //turns left
+  
+        
+    motor (0,100);
+    motor (1,100);
+    msleep (1500);
+    //moves to left building    
+   
+    motor (0,100);
+    motor (1,-100);
+    msleep (400);
+    //turn straight towards
+  
+    motor (1,-100);
+    motor (0,-100);
+    msleep (2500);
+    //moves back to box
+    motor (0,100);
+    motor (1,-100);
+    msleep (575);
+    //turns toward right building
+    motor (0,100);
+    motor (1,100);
+    msleep (1500);
+}
+    
+    
+    
+    
+    
+    
+    
