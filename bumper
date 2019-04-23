@@ -1,0 +1,11 @@
+#include <kipr/botball.h>
+
+int main()
+{
+   while (digital(1) == 0){
+       motor(0, 75);
+       motor(1, 75);
+}
+
+    	ao();
+}
