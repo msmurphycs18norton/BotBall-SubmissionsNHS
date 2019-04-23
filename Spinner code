@@ -1,0 +1,8 @@
+#include <kipr/botball.h>
+
+int main()
+{
+    motor(3, 100);
+    msleep(10000);
+    ao();
+}
